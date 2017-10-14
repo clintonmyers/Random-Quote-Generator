@@ -14,10 +14,12 @@ btn.addEventListener("click", function() {
 });
 
 function renderQ(data) {
+  document.getElementById("quote-info").innerHTML = "";
   quoteContainer.insertAdjacentHTML('beforeend', data);
 }
 
 function renderA(data) {
+  document.getElementById("author-info").innerHTML = "";
   authorContainer.insertAdjacentHTML('beforeend','-');
   authorContainer.insertAdjacentHTML('beforeend', data);
   authorContainer.insertAdjacentHTML('beforeend','-')
